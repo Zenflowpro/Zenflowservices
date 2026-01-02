@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ZenFlow Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #F4F4F4;
+            color: #333;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2D6CDF;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #2D6CDF;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2D6CDF;
+        }
+
+        .cards {
+            display: grid;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2D6CDF;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #2D6CDF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="ZenFlow Services Logo">
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#packs">Packs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>ZenFlow Services</h1>
+    <p>Votre temps a plus de valeur que vos tâches</p>
+</section>
+
+<section class="section" id="services">
+    <h2>Nos Services</h2>
+    <div class="cards">
+        <div class="card">Automatisation e-mails</div>
+        <div class="card">Gestion des rendez-vous</div>
+        <div class="card">Instagram automatique</div>
+        <div class="card">Devis & factures automatiques</div>
+        <div class="card">FAQ intelligente</div>
+    </div>
+</section>
+
+<section class="section" id="packs">
+    <h2>Nos Packs</h2>
+    <div class="cards">
+        <div class="card">Starter – 49 €</div>
+        <div class="card">Pro – 149 €</div>
+        <div class="card">Premium – 299 €</div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <form action="https://formsubmit.co/zenfowservices@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 ZenFlow Services
+</footer>
+
+</body>
+</html>
