@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>ZenFlow Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Police moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        :root{
+            --primary:#6A5ACD;   /* violet pro */
+            --accent:#CFA4E8;    /* rose/violet doux */
+            --bg:#F9F7FF;        /* fond clair premium */
+            --text:#1F2937;      /* gris foncé lisible */
+        }
+
         body {
             margin: 0;
-            font-family: Poppins, sans-serif;
-            background: #F9F7FF;
-            color: #1F2937;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
         }
 
         header {
-            background: #6A5ACD;
-            padding: 15px 30px;
+            background: #ffffff;
+            padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
+        /* 🔥 LOGO AGRANDI */
         header img {
-            height: 120px;
-            width: auto;
+            height: 120px;   /* ← tu peux ajuster : 100 / 140 */
         }
 
         nav a {
-            margin-left: 20px;
+            margin-left: 24px;
             text-decoration: none;
-            color: #2D6CDF;
-            font-weight: bold;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--accent);
         }
 
         .hero {
-            background: #2D6CDF;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.95;
         }
 
         .section {
             max-width: 1000px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         h2 {
             text-align: center;
-            color: #2D6CDF;
+            color: var(--primary);
+            margin-bottom: 40px;
         }
 
         .cards {
@@ -60,33 +84,41 @@
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            text-align: center;
         }
 
         form input, form textarea {
             width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-family: 'Poppins', Arial, sans-serif;
         }
 
         button {
-            background: #2D6CDF;
+            background: var(--primary);
             color: white;
-            padding: 12px;
+            padding: 14px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: var(--accent);
+            color: var(--text);
         }
 
         footer {
-            background: #2D6CDF;
+            background: var(--primary);
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -141,11 +173,8 @@
 </section>
 
 <footer>
-    © 2025 ZenFlow Services
+    © ZenFlow Services – Automatisation & Organisation
 </footer>
 
 </body>
 </html>
-
-
-
